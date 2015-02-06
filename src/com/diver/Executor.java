@@ -5,8 +5,8 @@ import java.util.*;
 public class Executor {
 
     public static void main(String[] args) {
-        final Set<String> tasks = createTasks();
-        final Set<String> names = new HashSet<>(Arrays.asList("Denis", "Pasha", "Vova", "Stepa"));
+        final Set<String> tasks = new HashSet<>(Arrays.asList("Prototype", "Builder", "Factory", "Abstract Factory", "Singleton"));
+        final Set<String> names = new HashSet<>(Arrays.asList("Denis", "Pasha", "Stepa"));
 
         final ShufflerProvider simpleShuffler = new SimpleShuffler();
         TaskDistributor distributor = new TaskDistributorImpl(tasks, names, simpleShuffler);
